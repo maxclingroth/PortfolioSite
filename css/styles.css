@@ -1,0 +1,178 @@
+/*
+Max Clingroth
+styles.css
+*/
+
+/* Global Styles
+------------------------------- */
+body, header, nav, main, section, footer, img, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: Garamond, Georgia, 'Times New Roman', Times, serif;
+    background-color: #161519;
+    color: #F4F4F6;
+}
+
+h3 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    font-family: Corbel, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+}
+
+main {
+    margin: 1% 15%;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* Navigation
+------------------------------ */
+nav {
+    position: fixed;
+    top: 0;
+    background-color: #142045;
+    width: 100%;
+    padding: 25px;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+nav li {
+    display: inline-block;
+    text-align: center;
+    list-style: none;
+    position: relative;
+    right: 3em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #F4F4F6;
+    font-size: 1.2em;
+}
+
+
+/* Header
+------------------------------ */
+header {
+    font-family: Corbel, Verdana, Geneva, Tahoma, sans-serif;
+    margin: 90px 4% 3% 4%;
+    display: grid;
+    grid-template-columns: .8fr 1fr;
+    gap: 130px;
+}
+
+header div {
+    text-align: right;
+    margin-top: 110px;
+}
+
+h1, h2 {
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 70px;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+header img {
+    margin-top: 20px;
+}
+
+
+/* About Me
+------------------------------- */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+}
+
+#about-me h3 {
+    text-align: right;
+}
+
+#about-me img {
+    margin-top: 10px;
+}
+
+
+/* Portfolio
+------------------------------- */
+.portfolio-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin: 40px 0;
+}
+
+.portfolio-item div {
+    margin: 0;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+
+/* Contact info
+------------------------------- */
+#contact-me h3 {
+    text-align: center;
+}
+
+footer {
+    background-color: #150006;
+    padding: 0 25px 25px 25px;
+}
+
+footer ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style: none;
+    text-align: center;
+}
+
+footer a {
+    color: #F4F4F6;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+
+/* Responsive
+------------------------------- */
+@media screen and (max-width: 1131px) {
+    header, .about-grid, .portfolio-item {
+        display: block;
+        text-align: center;
+    }
+
+    header div {
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    #about-me h3 {
+        text-align: center;
+    }
+}
