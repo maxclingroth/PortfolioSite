@@ -62,6 +62,10 @@ nav a {
     font-size: 1.2em;
 }
 
+input, label {
+    display: none;
+}
+
 
 /* Header
 ------------------------------ */
@@ -166,6 +170,7 @@ footer a {
 
     header div {
         text-align: center;
+        margin-top: -40px;
     }
 
     h3 {
@@ -174,5 +179,52 @@ footer a {
 
     #about-me h3 {
         text-align: center;
+    }
+
+    nav {
+        display: none;
+        width: 6.5em;
+        border: #F4F4F6 solid 1px;
+        padding: 0;
+    }
+
+    nav ul {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1.5em 1.5em 1.5em 1.5em;
+    }
+
+    nav li {
+        right: 0;
+        padding: 3%;
+        border-bottom: #F4F4F6 solid 1px;
+    }
+
+    nav li:last-of-type {
+        border-bottom: none;
+    }
+
+    nav li:hover {
+        background-color: rgba(44, 51, 75, 0.9);
+    }
+
+    label {
+        display: block;
+        position: fixed;
+        text-align: right;
+        right: 5%;
+        top: 3%;
+    }
+
+    .nav-wrap {
+        font-size: 3em;
+    }
+
+    #hamburger:checked ~ nav {
+        display: inline;
+        position: fixed;
+        top: 9%;
+        right: 5%;
+        font-size: .4em;
     }
 }
